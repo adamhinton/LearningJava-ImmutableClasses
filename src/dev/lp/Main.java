@@ -26,5 +26,7 @@ public class Main {
         john.setKids(new Person[] {new Person(), new Person()});
         System.out.println(john);
 
+
+
     }
 }

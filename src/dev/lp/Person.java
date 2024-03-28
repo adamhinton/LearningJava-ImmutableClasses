@@ -13,6 +13,18 @@ public class Person {
         return name;
     }
 
+    public Person(String name, String dob) {
+        this(name, dob, null);
+    }
+
+    public Person(String name, String dob, Person[] kids) {
+        this.name = name;
+        this.dob = dob;
+        this.kids = kids;
+    }
+
+
+
     public void setName(String name) {
         this.name = name;
     }

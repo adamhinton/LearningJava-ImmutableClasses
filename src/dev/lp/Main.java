@@ -8,18 +8,23 @@ public class Main {
         jane.setName("Jane");
 
         Person jim = new Person();
-        jane.setName("Jim");
+        jim.setName("Jim");
 
         Person joe = new Person();
-        jane.setName("Joe");
+        joe.setName("Joe");
 
         Person john = new Person();
-        jane.setName("John");
+        john.setName("John");
         john.setDob("05/05/1900");
 
-        jane.setKids(new Person[]{jane, jim, joe});
+        john.setKids(new Person[]{jane, jim, joe});
         System.out.println(john);
 
+
+        // Dangerous mutations alert
+        john.setName("Jacob");
+        john.setKids(new Person[] {new Person(), new Person()});
+        System.out.println(john);
 
     }
 }

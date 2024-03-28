@@ -24,17 +24,8 @@ public class Person {
     }
 
 
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getDob() {
         return dob;
-    }
-
-    public void setDob(String dob) {
-        this.dob = dob;
     }
 
     public Person[] getKids() {
